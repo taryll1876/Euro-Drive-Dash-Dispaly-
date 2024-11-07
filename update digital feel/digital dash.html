@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Digital Cluster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cluster">
+        <!-- Speedometer -->
+        <div class="gauge speedometer">
+            <div class="gauge-inner">
+                <div class="gauge-label">Speed</div>
+                <div class="gauge-value" id="speed-value">120</div>
+                <div class="gauge-unit">KM/H</div>
+            </div>
+        </div>
+
+        <!-- RPM Gauge -->
+        <div class="gauge rpm-gauge">
+            <div class="gauge-inner">
+                <div class="gauge-label">RPM</div>
+                <div class="gauge-value" id="rpm-value">4000</div>
+                <div class="gauge-unit">x1000</div>
+            </div>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="info-section">
+            <div class="info-box">
+                <div class="info-title">Fuel</div>
+                <div class="info-value">60%</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Temp</div>
+                <div class="info-value">90°C</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Range</div>
+                <div class="info-value">300 KM</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

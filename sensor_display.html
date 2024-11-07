@@ -1,0 +1,116 @@
+f<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Euro Drive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Add your favicon file here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    
+
+    <canvas id="rpmGauge"></canvas>
+
+    <!-- Next and previous buttons -->
+    <div class="controls">
+        <button id="prevBtn" class="control-btn">Previous</button>
+        <button id="nextBtn" class="control-btn">Next</button>
+        <button id="powerBtn" class="control-btn">Power</button>
+    </div>
+    
+
+    <script src="sensorDisplayController.js"></script>
+
+
+    <div class="race-cluster">
+        <div class="container">
+            <div class="sensor" id="rpmSensor">
+                <img src="rpm_sensor.png" alt="RPM Sensor">
+                <div class="value" id="rpmValue">0</div>
+                <div class="name">RPM</div>
+                <div class="graph" id="rpmGraph">
+                    <div class="bar" id="rpmBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="boostPressureSensor">
+                <img src="boost_pressure_sensor.png" alt="Boost Pressure Sensor">
+                <div class="value" id="boostPressureValue">0</div>
+                <div class="name"> Vacuum/ Boost (psi)</div>
+                <div class="graph" id="boostPressureGraph">
+                    <div class="bar" id="boostPressureBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="oilPressureSensor">
+                <img src="oil_pressure_sensor.png" alt="Oil Pressure Sensor">
+                <div class="value" id="oilPressureValue">0</div>
+                <div class="name">Oil Pressure (psi)</div>
+                <div class="graph" id="oilPressureGraph">
+                    <div class="bar" id="oilPressureBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="oilTempSensor">
+                <img src="oil_temp_sensor.png" alt="Oil Temperature Sensor">
+                <div class="value" id="oilTempValue">0</div>
+                <div class="name">Oil Temperature (°C)</div>
+                <div class="graph" id="oilTempGraph">
+                    <div class="bar" id="oilTempBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="coolantTempSensor">
+                <img src="coolant_temp_sensor.png" alt="Coolant Temperature Sensor">
+                <div class="value" id="coolantTempValue">0</div>
+                <div class="name">Coolant Temperature (°C)</div>
+                <div class="graph" id="coolantTempGraph">
+                    <div class="bar" id="coolantTempBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="mphSensor">
+                <img src="mph_sensor.png" alt="Miles Per Hour Sensor">
+                <div class="value" id="mphValue">0</div>
+                <div class="name">Mph</div>
+                <div class="graph" id="mphGraph">
+                    <div class="bar" id="mphBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="gearboxPosSensor">
+                <img src="gearbox_pos_sensor.png" alt="Gearbox Position Sensor">
+                <div class="value" id="gearboxPosValue">0</div>
+                <div class="name">Gear Position</div>
+                <div class="graph" id="gearboxPosGraph">
+                    <div class="bar" id="gearboxPosBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="waterTempSensor">
+                <img src="water_temp_sensor.png" alt="Water Temperature Sensor">
+                <div class="value" id="waterTempValue">0</div>
+                <div class="name">Water Temperature (°C)</div>
+                <div class="graph" id="waterTempGraph">
+                    <div class="bar" id="waterTempBar" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="sensor" id="batteryVoltageSensor">
+                <img src="battery_voltage_sensor.png" alt="Battery Voltage Sensor">
+                <div class="value" id="batteryVoltageValue">0</div>
+                <div class="name">Battery Voltage (V)</div>
+                <div class="graph" id="batteryVoltageGraph">
+                    <div class="bar" id="batteryVoltageBar" style="width: 0;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sensorDisplayController.js"></script>
+
+</body>
+
+</html>

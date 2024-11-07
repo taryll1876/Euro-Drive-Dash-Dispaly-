@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Drive Sensor Cluster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <h1>Euro Drive Sensor Cluster</h1>
+
+        <div class="gauges">
+            <canvas id="rpmGauge" width="200" height="200"></canvas>
+            <canvas id="boostGauge" width="200" height="200"></canvas>
+            <canvas id="oilPressureGauge" width="200" height="200"></canvas>
+            <canvas id="coolantTempGauge" width="200" height="200"></canvas>
+        </div>
+
+        <div class="sensor-container">
+            <div class="sensor">
+                <div class="name">Oil Temperature (°C)</div>
+                <div class="value" id="oilTempValue">0</div>
+            </div>
+            <div class="sensor">
+                <div class="name">Speed (mph)</div>
+                <div class="value" id="mphValue">0</div>
+            </div>
+            <div class="sensor">
+                <div class="name">Gear Position</div>
+                <div class="value" id="gearboxPosValue">0</div>
+            </div>
+            <div class="sensor">
+                <div class="name">Battery Voltage (V)</div>
+                <div class="value" id="batteryVoltageValue">0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="powerBtn">Power</button>
+        </div>
+    </div>
+
+    <script src="sensorDisplayController.js"></script>
+</body>
+
+</html>

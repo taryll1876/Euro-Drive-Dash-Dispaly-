@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wideband UEGO & Sensors Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main Display Area -->
+<div class="container-fluid text-center">
+    <h1>Wideband UEGO & Sensor Display</h1>
+    <div class="gauge-container">
+        <div id="gauge"></div>
+        <p id="afr-value">AFR: 14.7</p>
+    </div>
+</div>
+
+<!-- Menu Navigation -->
+<div class="container mt-4">
+    <div class="row text-center">
+        <div class="col">
+            <button class="btn btn-primary" onclick="navigate('afr')">AFR Display</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-secondary" onclick="navigate('sensor')">Sensor Data</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-info" onclick="navigate('water-temp')">Water Temp</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning" onclick="navigate('oil-pressure')">Oil Pressure</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success" onclick="navigate('settings')">Settings</button>
+        </div>
+    </div>
+</div>
+
+<!-- Menu Content -->
+<div id="menu-content" class="container-fluid mt-4">
+    <!-- AFR Display Menu -->
+    <div id="afr-menu" class="menu">
+        <h3>Real-Time AFR Display</h3>
+        <p>Current AFR: <span id="current-afr">14.7</span></p>
+    </div>
+    <!-- Sensor Data Menu -->
+    <div id="sensor-menu" class="menu">
+        <h3>Sensor Data</h3>
+        <p>Voltage: <span id="voltage">0.00V</span></p>
+        <p>Temperature: <span id="temperature">25°C</span></p>
+    </div>
+    <!-- Water Temperature Menu -->
+    <div id="water-temp-menu" class="menu">
+        <h3>Water Temperature</h3>
+        <p>Water Temp: <span id="water-temp">90°C</span></p>
+    </div>
+    <!-- Oil Pressure Menu -->
+    <div id="oil-pressure-menu" class="menu">
+        <h3>Oil Pressure</h3>
+        <p>Oil Pressure: <span id="oil-pressure">30 PSI</span></p>
+    </div>
+    <!-- Settings Menu -->
+    <div id="settings-menu" class="menu">
+        <h3>Settings</h3>
+        <label for="afr-target">AFR Target:</label>
+        <input type="number" id="afr-target" value="14.7">
+        <button class="btn btn-primary mt-2">Save</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

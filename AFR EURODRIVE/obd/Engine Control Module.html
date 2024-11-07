@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECM Monitoring </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bluetooth Connection Status -->
+<div id="connection-status" class="connection-status">
+    <p id="connection-text">Status: Disconnected</p>
+</div>
+
+<div class="container-fluid">
+    <h1 class="text-center my-4">EURODRIVE</h1>
+
+
+    <!-- OBD2 Scanner and Control Functions omitted for brevity -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<div class="container-fluid">
+    <h1 class="text-center my-4">ECM Monitoring & OBD2 Dashboard</h1>
+
+    <!-- Main Cluster for Displaying Sensor Data -->
+    <div class="row text-center" id="dashboard">
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Fuel Pump</h3>
+                <p id="fuel-pump-status">Status: Normal</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>MAP Sensor</h3>
+                <p id="map-sensor">Pressure: 0 kPa</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Throttle Position (TPS)</h3>
+                <p id="tps">Position: 0%</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Crank Position</h3>
+                <p id="crank-position">Position: 0°</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center" id="dashboard-2">
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Intake Air Temp</h3>
+                <p id="intake-air-temp">Temp: 0°C</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Speed (MPH)</h3>
+                <p id="speed-sensor">Speed: 0 mph</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>O2 Sensor</h3>
+                <p id="o2-sensor">O2 Level: Normal</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Engine Temp</h3>
+                <p id="engine-temp">Temp: 0°C</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center" id="dashboard-3">
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Idle Air Solenoid</h3>
+                <p id="idle-air-solenoid">Status: Normal</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Injectors</h3>
+                <p id="injectors">Status: Firing</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="sensor-box">
+                <h3>Ignition Coil</h3>
+                <p id="ignition-coil">Status: Firing</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OBD2 Scanner and Diagnostics -->
+    <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+            <h3>OBD2 Scanner</h3>
+            <button id="scan-obd2" class="btn btn-primary">Scan for Codes</button>
+            <div id="diagnostic-result" class="my-4"></div>
+        </div>
+    </div>
+
+    <!-- Control Functions -->
+    <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+            <h3>Control Functions</h3>
+            <button id="reset-sensors" class="btn btn-danger">Reset Sensors</button>
+            <button id="optimize-performance" class="btn btn-success">Optimize Performance</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

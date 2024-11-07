@@ -1,0 +1,83 @@
+body {
+    background-color: #101010;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cluster {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.gauge {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 8px solid #444;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #333, #111);
+}
+
+.gauge-inner {
+    text-align: center;
+}
+
+.gauge-label {
+    font-size: 18px;
+    color: #AAA;
+}
+
+.gauge-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00FFCC;
+    margin: 10px 0;
+}
+
+.gauge-unit {
+    font-size: 16px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.info-box {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.1);
+    text-align: center;
+}
+
+.info-title {
+    font-size: 16px;
+    color: #AAA;
+}
+
+.info-value {
+    font-size: 24px;
+    color: #00FFCC;
+    font-weight: bold;
+}

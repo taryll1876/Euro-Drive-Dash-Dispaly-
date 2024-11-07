@@ -1,0 +1,68 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.sensor {
+    background-color: #fc0000de;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.value {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.graph {
+    height: 10px;
+    background-color: #f17807;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background-color: #007bff;
+}
+
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0000; /* Red color */
+    color: #000000; /* Black color */
+}
+
+.controls button:hover {
+    background-color: #cc0000; /* Darker red color on hover */
+    color: #ffffff; /* White color on hover */
+}
+
+
